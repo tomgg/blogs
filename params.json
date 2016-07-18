@@ -1,0 +1,6 @@
+{
+  "name": "Blogs",
+  "tagline": "",
+  "body": "### 项目测试环境\r\n#### 编译发布\r\n1. 编译OCRM\r\n```bash\r\nssh aideploy@20.26.25.42; (aideploy/aideploy)\r\ncd deploy_cscrm1/bin/;\r\nsh create.sh;\r\n```\r\n2. 发布OCRM WEB APP INTER EXE PROD\r\n```bash\r\nssh aideploy@20.26.25.42; (aideploy/aideploy)\r\ncd deploy_cscrm1/bin;\r\nsh deploy-crm-app-g1.sh;\r\nsh deploy-crm-web-g1.sh;\r\nsh deploy-inter.sh;\r\nsh deploy-aicrm-exe.sh;\r\nsh deploy-aiprod.sh\r\n```\r\n3. 发布OCRM CSF MSG\r\n> 打开[jekins](http://20.26.20.106:8800/)页面   devops106/devops106\r\n  点击 crm-center-qa 立即构建\r\n\r\n\r\n#### 管理平台\r\n[服务治理平台](http://20.26.25.40:8080/csf-admin/common/index.jsp)\r\n\r\n[zookeeper](http://20.26.25.39:8080/zkWeb-1.0)\r\n\r\n[marathon](http://20.26.25.11:8080)  账号/密码：dcosadmin/zjdcos01\r\n\r\n\r\n#### 主机平台\r\n```bash\r\nssh aiweb@20.26.25.131\r\nssh aiapp@20.26.25.132\r\nssh aiapp@20.26.25.133\r\nssh dcos@20.26.25.10\r\n```\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
